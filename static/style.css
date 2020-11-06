@@ -1,0 +1,218 @@
+body {margin:0;}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  z-index: 5;
+  font-family: 'Major Mono Display',Regular;
+
+}
+
+.topnav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color:white;
+  font-family: 'Major Mono Display',Regular;
+  transition-duration: 0.3s;
+  z-index: 5;
+
+}
+
+.topnav a:hover {
+  background-color:#0055FF;
+  color: black;
+  z-index: 5;
+
+}
+
+.topnav a.active {
+  background-color: #5500AF;
+  color: white;
+  z-index: 5;
+
+}
+
+.navheader {
+  float: left;
+  color: #0055FF;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: 'Major Mono Display',Regular;
+  position:absolute;
+  left:20px;
+  top:-9px
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+.stars {
+  background:rgb(0, 0, 0) url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:-1;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:0;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+    z-index:3;
+
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+}
+
+.card {
+  background-color: #021CAE;
+  width: 300px;
+  height: 200px;
+  border: 4px solid black;
+  perspective: 1000px;
+}
+.flip-card-front {
+  background-color:#021CAE;
+  color: white;
+}
+
+.position-card{
+  position: absolute;
+  top: 150px;
+  left: 175px;
+}
+
+.flip-card-front2 {
+  background-color: #FF6400;
+  color: white;
+}
+
+.position-card2{
+  position: absolute;
+  top: 150px;
+  left: 575px;
+}
+
+.card2 {
+  background-color: #FF6400;
+  width: 300px;
+  height: 200px;
+  border: 4px solid black;
+  perspective: 100px;
+}
+
+.flip-card-front3 {
+  background-color: #480095;
+  color: white;
+}
+
+.position-card3{
+  position: absolute;
+  top: 150px;
+  left: 975px;
+}
+
+.card3{
+  background-color: #480095;
+  width: 300px;
+  height: 200px;
+  border: 4px solid black;
+  perspective: 1000px;
+}
+
+.p-card{
+  background-color: #480095;
+  width: 300px;
+  height: 200px;
+  border: 4px solid black;
+  perspective: 1000px;
+}
+
+.repl-pos card{
+  position: absolute;
+  top: 150px;
+  left: 150px;
+}
+
+.p-front{
+  background-color: #480095;
+  color: white;
+
+}
+
+.p-card2{
+  background-color: #FF6400;
+  width: 300px;
+  height: 200px;
+  border: 4px solid black;
+  perspective: 1000px;
+}
+
+.repl-pos card2{
+  position: absolute;
+  top: 150px;
+  left: 575px;
+}
+
+.p-front2{
+  background-color:#FF6400;
+  color: white;
+
+}
+
+
+
